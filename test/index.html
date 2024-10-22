@@ -1,0 +1,666 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <!-- Read and update content attributes accordingly  -->
+
+    <meta
+      name="description"
+      content="My personal website! It's about, well, me, and showcases a few of my best works! It also displays my social media and as well as some ways to get in touch with me."
+    />
+
+    <!-- Google / Search Engine Tags -->
+<meta itemprop="name" content="Samuel Aellig">
+<meta itemprop="description" content="Welcome to my Personal Website, A showcase of my best works.">
+
+<!-- Reference screenshot of updated site's header in place of content -->
+<meta itemprop="image" content="assets/images/sharing-card.png">
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://saellig.dev">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sameul Aellig">
+<meta property="og:description" content="Welcome to my Personal Website, A showcase of my best works.">
+
+<!-- Reference screenshot of updated site's header in content -->
+<meta property="og:image" content="assets/images/sharing-card.png">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Samuel Aellig">
+<meta name="twitter:description" content="Welcome to my Personal Website, A showcase of my best works.">
+
+<!-- Reference screenshot of updated site's header in content -->
+<meta name="twitter:image" content="assets/images/sharing-card.png">
+
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicons.png"
+      type="image/png"
+    />
+
+    <link
+      rel="preload"
+      href="assets/fonts/Mona-Sans.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+
+    <title>Samuel Aellig</title>
+  </head>
+
+  <body>
+
+    <script>
+      const theme = localStorage.getItem("theme") || "dark";
+      document.body.classList.add(theme);
+    </script>
+
+    <header class="header">
+
+      <div class="menu-btn-container">
+        <div class="container">
+          <button type="button" class="menu-btn">menu</button>
+        </div>
+      </div>
+
+      <nav class="nav hidden">
+        <ol class="nav-items">
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="#work">My Work</a></li>
+          <li class="nav-item"><a href="#services">My Services</a></li>
+          <li class="nav-item"><a href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a href="#contact" data-focused="last-focused">Contact</a>
+          </li>
+        </ol>
+      </nav>
+
+      <div class="container">
+        <div class="header-textbox">
+          <!-- Header -->
+          <h1 class="h1">
+            Hello! I'm Samuel Aellig <br />
+            a <span class="typing"></span></li>
+          </h1>
+
+          <!-- small introductory paragraph -->
+          <p class="header-text">
+            Welcome to Samuel Aellig's Portfolio. This is where I showcase how my creativity ignites, my web design captivates, how my branding mesmerizes, and how my video editing inspires digital success.
+          </p>
+
+          <div class="header-btns">
+            <a href="#contact" class="btn btn-cta">Hire me</a>
+            <a href="#work" class="btn btn-secondary">See my work</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="client">
+        <div class="container">
+          <h2 class="h2">Trusted by</h2>
+          <div class="logos">
+            <!-- Replace alt with client/company name and src attributes of images with path to relative img of client logo -->
+            <div class="logo-group">
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/logoipsum-289.svg"
+                alt="Logoipsum"
+                class="logo hide to-top"
+              />
+
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/logoipsum-297.svg"
+                alt="Logoipsum"
+                class="logo"
+              />
+
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/logoipsum-311.svg"
+                alt="Logoipsum"
+                class="logo hide to-bottom"
+              />
+            </div>
+            <div class="logo-group">
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/logoipsum-325.svg"
+                alt="Logoipsum"
+                class="logo hide to-top"
+              />
+
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/logoipsum-329.svg"
+                alt="Logoipsum"
+                class="logo"
+              />
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/logoipsum-331.svg"
+                alt="Logoipsum"
+                class="logo hide to-bottom"
+              />
+            </div>
+            <div class="logo-group">
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/logoipsum-332.svg"
+                alt="Logoipsum"
+                class="logo hide to-top"
+              /><img
+                loading="lazy"
+                src="assets/images/trusted-by/logoipsum-261.svg"
+                alt="Logoipsum"
+                class="logo"
+              /><img
+                loading="lazy"
+                src="assets/images/trusted-by/logoipsum-258.svg"
+                alt="Logoipsum"
+                class="logo hide to-bottom"
+              />
+            </div>
+            <div class="logo-group">
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/logoipsum-259.svg"
+                alt="Logoipsum"
+                class="logo hide to-top"
+              />
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/logoipsum-260.svg"
+                alt="Logoipsum"
+                class="logo"
+              />
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/logoipsum-262.svg"
+                alt="Logoipsum"
+                class="logo hide to-bottom"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="work">
+        <div class="container">
+          <h2 class="h2" id="work">Selected Work</h2>
+          <div class="work-boxes">
+            <div class="work-box">
+              <div class="work-textbox">
+                <!-- project title here -->
+                <h3 class="h3">aeroX Network</h3>
+                <!-- small description of project  -->
+                <p class="work-text">
+                  Explore the aeroX Network - a hub of projects redefining your online experience through groundbreaking innovation.
+                </p>
+                <!-- technologies used to build the project -->
+                <ol class="work-technologies">
+                  <li>Wordpress</li>
+                  <li>Elementor</li>
+                  <li>JS</li>
+                </ol>
+
+                <div class="work-links">
+                  <!-- Add url of project in href attribute -->
+                  <a href="https://www.aeroxnetwork.com" target="_blank" rel="noopener" class="link"
+                    >Explore this project</a
+                  >
+                </div>
+              </div>
+
+         <!-- img src and alt attribute  -->
+
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  img src="./assets/images/work/project-1.png" alt="aeroX"
+                />
+              </picture>
+            </div>
+
+        
+            <div class="work-box">
+              <div class="work-textbox">
+                <!-- Add your project title here -->
+                <h3 class="h3">TimeSync</h3>
+                <!-- small description of project  -->
+                <p class="work-text">A sleek clock UI blending Neumorphism with Minimalist design, featuring light and dark themes for seamless user experience on all devices.</p>
+                <ol class="work-technologies">
+                  <li>HTML5</li>
+                  <li>CSS</li>
+                  <li>JS</li>
+                </ol>
+                <div class="work-links">
+                  <!-- url of project -->
+                  <a href="https://saellig.dev/timesync" class="link"
+                    >Explore this project</a
+                  >
+                </div>
+              </div>
+
+         <!-- img src and alt attribute -->
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  img src="./assets/images/work/project-2.png" alt="TimeSync"
+                />
+              </picture>
+            </div>
+
+            <div class="work-box">
+              <div class="work-textbox">
+                <!-- Add your project title here -->
+                <h3 class="h3">aeroX ToDo App</h3>
+                <!-- small description of project  -->
+                <p class="work-text">A revolutionary task management application that transcends traditional to-do lists.</p>
+                <ol class="work-technologies">
+                  <li>HTML5</li>
+                  <li>CSS</li>
+                  <li>JS</li>
+                </ol>
+                <div class="work-links">
+                  <!-- url of project -->
+                  <a href="https://todo.aeroxnetwork.com/" class="link"
+                    >Explore this project</a
+                  >
+                </div>
+              </div>
+
+         <!-- img src and alt attribute -->
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  img src="./assets/images/work/project-3.png" alt="aeroXToDo"
+                />
+              </picture>
+            </div>
+
+            <div class="work-box">
+              <div class="work-textbox">
+                <!-- Add your project title here -->
+                <h3 class="h3">Cameron Stewarts Personal Portfolio</h3>
+                <!-- small description of project  -->
+                <p class="work-text">A contemporary user interface seamlessly fusing animation and design elements, characterized by a luminous, visually captivating theme.</p>
+                <ol class="work-technologies">
+                  <li>HTML5</li>
+                  <li>CSS</li>
+                  <li>JS</li>
+                </ol>
+                <div class="work-links">
+                  <!-- url of project -->
+                  <a href="https://www.cameronstewart.uk" class="link"
+                    >Explore this project</a
+                  >
+                </div>
+              </div>
+
+         <!-- img src and alt attribute -->
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  img src="./assets/images/work/project-4.png" alt="CameronStewart"
+                />
+              </picture>
+            </div>
+
+            <div class="work-box">
+              <div class="work-textbox">
+                <!-- Add your project title here -->
+                <h3 class="h3">Atlas Digital Protection Branding</h3>
+                <!-- Add small description of your project  -->
+                <p class="work-text">
+                  Comprehensive branding and logo solution developed for Atlas Digital Protection.
+                </p>
+                <ol class="work-technologies">
+                  <li>Photoshop</li>
+                  <li>Illustrator</li>
+                  <li>Canva</li>
+                </ol>
+                <div class="work-links">
+                  <!-- Add url of project in href attribute -->
+                  <a href="#" target="_blank" rel="noopener" class="link"
+                    >You are unable to explore this project</a
+                  >
+                </div>
+              </div>
+         <!-- Update img src and alt attribute  -->
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/work/graphicproject-1.png"
+                  alt="AtlasDigitalBranding"
+                />
+              </picture>
+            </div>
+
+            <div class="work-box">
+              <div class="work-textbox">
+                <!-- Add your project title here -->
+                <h3 class="h3">Baslow Bags Promotional Branding</h3>
+                <!-- Add small description of your project  -->
+                <p class="work-text">
+                  Unique and colourful promotional branding package developed for Baslow Bags.
+                </p>
+                <ol class="work-technologies">
+                  <li>Photoshop</li>
+                  <li>Illustrator</li>
+                  <li>Canva</li>
+                </ol>
+                <div class="work-links">
+                  <!-- Add url of project in href attribute -->
+                  <a href="#" target="_blank" rel="noopener" class="link"
+                    >You are unable to explore this project</a
+                  >
+                </div>
+              </div>
+         <!-- Update img src and alt attribute  -->
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/work/graphicproject-2.png"
+                  alt="BaslowBagsBranding"
+                />
+              </picture>
+            </div>
+
+            <div class="work-box">
+              <div class="work-textbox">
+                <!-- Add your project title here -->
+                <h3 class="h3">Harkster Promotional Video</h3>
+                <!-- Add small description of your project  -->
+                <p class="work-text">
+                  Fast, Snappy and colourful promotional motion design animation developed & created for Harkster.
+                </p>
+                <ol class="work-technologies">
+                  <li>Adobe After Effects</li>
+                  <li>Illustrator</li>
+                  <li>Wondershare Filmora</li>
+                </ol>
+                <div class="work-links">
+                  <!-- Add url of project in href attribute -->
+                  <a href="assets/images/work/videoeditingproject-1-SOUND.mp4" target="_blank" rel="noopener" class="link">
+                   You can view the full video here</a
+                  >
+                </div>
+              </div>
+         <!-- Update img src and alt attribute  -->
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/work/videoeditingproject-1.png"
+                  alt="HarksterPromotionalMedia"
+                />
+              </picture>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Services -->
+
+      <section class="services">
+        <div class="container">
+          <h2 class="h2" id="services">My Services</h2>
+          <div class="article-boxes">
+            </article>
+            <article class="article-box">
+              <div class="article-textbox">
+                <div>
+                  <h3 class="h4">Logo and Brand Design</h3>
+                  <p class="article-text">
+                    Unlock Your Brand's Potential, I will craft a visually captivating logo and comprehensive brand identity tailored to your unique vision and target audience.
+                  </p>
+                </div>
+                <div class="article-info">
+                  <a href="./services/branding" class="link"
+                    >Ready to Elevate Your Business?</a
+                  >
+            </article>
+
+            <article class="article-box">
+              <div class="article-textbox">
+                <div>
+                  <h3 class="h4">Website Design</h3>
+                  <p class="article-text">
+                    Elevate Your Online Presence, As I craft visually stunning and user-friendly websites that captivate your audience from the first click. 
+                    I will tailor each design to reflect your brand's identity and meet your specific goals.
+                  </p>
+                </div>
+                <div class="article-info">
+                  <a href="./comingsoon" class="link"
+                    >Enhance Your Online Presence?</a
+                  >
+            </article>
+
+            </article>
+            <article class="article-box">
+              <div class="article-textbox">
+                <div>
+                  <h3 class="h4">Video Editing</h3>
+                  <div class="article-text">
+                    Ignite Your Brand's Story, I will bring your brand to life through captivating motion graphics and animations. 
+                    I will tailor each design to resonate with your audience and amplify your brand message.
+                  </div>
+                </div>
+                <div class="article-info">
+                  <a href="./comingsoon" class="link"
+                    >Captivate Your Audience?</a
+                  >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- testimonials, author name, author job, img src and, alt attributes -->
+
+      <section>
+        <h2 class="h2" id="testimonials">Testimonials</h2>
+        <div class="container">
+          <ol class="testimonials">
+            <li class="testimonial">
+              <blockquote class="testimonial-text">
+                Wow! I can't express how impressed I am with the top-notch quality of Sam's products. 
+                He truly exceeded my expectations, especially considering the fantastic price point. 
+                Without a doubt, I wholeheartedly recommend Sam to anyone looking for exceptional value. Five stars all the way!
+              </blockquote>
+              <figure class="testimonial-author">
+                <img
+                  src="assets/images/testimonial-img.png"
+                  alt="Terrence Randall"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3 class="testimonial-author-name">Terrence Randall</h3>
+                  <p class="testimonial-author-job">Founder @AtlasDigital</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="testimonial">
+              <blockquote class="testimonial-text">
+                Extremely Impressed with Sam! Beautiful design, great prices, and amazing turnaround times. 
+                Also extremely easy to work with and willing to go above and beyond for the customer. If you need any Graphics Design work done, go to Sam!
+              </blockquote>
+              <figure class="testimonial-author">
+                <img
+                  src="assets/images/testimonial-img.png"
+                  alt="Carl Eley"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3 class="testimonial-author-name">
+                   Carl Eley
+                  </h3>
+                  <p class="testimonial-author-job">Director & CEO @ACRealism
+                  </p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="testimonial">
+              <blockquote class="testimonial-text">
+                Samuel brought our brand to life with their exceptional design expertise. His creativity, attention to detail, and commitment to excellence are unmatched. 
+                We couldn't be happier with the results!
+              </blockquote>
+              <figure class="testimonial-author">
+                <img
+                  src="assets/images/testimonial-img.png"
+                  alt="Brian Hirsh"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3 class="testimonial-author-name">Brian Hirsh</h3>
+                  <p class="testimonial-author-job">CEO @Connect</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="testimonial">
+              <blockquote class="testimonial-text">
+                Working with Sam was a game-changer for our business. 
+                His motion design work helped us engage our target market in ways we never thought possible. 
+                Highly recommend his services!
+              </blockquote>
+              <figure class="testimonial-author">
+                <img
+                  src="assets/images/testimonial-img.png"
+                  alt="Bob McDylan"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3 class="testimonial-author-name">Bob McDylan</h3>
+                  <p class="testimonial-author-job">CEO @JFH</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="testimonial">
+              <blockquote class="testimonial-text">
+                Samuel really exceeded our expectations with his website design service. 
+                He listened to our needs, provided valuable insights, and delivered a website that truly reflects our brand identity. 
+                It's been a pleasure working with him! 
+              </blockquote>
+              <figure class="testimonial-author">
+                <img
+                  src="assets/images/testimonial-img.png"
+                  alt="Scott Hughes"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3 class="testimonial-author-name">Scott Hughes</h3>
+                  <p class="testimonial-author-job">Business Owner @BeeBees</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="testimonial">
+              <blockquote class="testimonial-text">
+                Sam brought life into my brand through his exceptional design expertise. 
+                His creativity, great attention to detail, and strong commitment to excellence sets him apart. 
+                I am thrilled with the outcome!
+              </blockquote>
+              <figure class="testimonial-author">
+                <img
+                  src="assets/images/testimonial-img.png"
+                  alt="Gary Simon"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3 class="testimonial-author-name">Alexander Smith</h3>
+                  <p class="testimonial-author-job">Owner @AurolicVisuals</p>
+                </figcaption>
+              </figure>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="container">
+          <h2 class="h2" id="contact">Send me a Message</h2>
+          <div class="contact-content">
+            <div class="contact-textbox">
+              <!-- Please comment this component if you're not available for hire -->
+              <strong href="#" class="hire-alert">
+                <span class="indicator"></span>
+                Available for hire
+              </strong>
+              <p class="contact-text">
+                Ignite the flames of your business's media presence with Wildfire Studios, your partner in revolutionizing your brand's digital footprint. Our seasoned team of experts is dedicated to propelling your business to new heights through innovative strategies and captivating content creation.
+              </p>
+              <p class="contact-text">
+                The time to revolutionize your business is now, and Wildfire Studios is here to lead the charge.
+              </p>
+            </div>
+            <form action="mailto:hello@saellig.dev" method="post" enctype="text/plain">
+              <input type="hidden" name="subject" value="Message from Samuel Aellig Contact Form">
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required />
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required inputmode="email" />
+              </div>
+              <div class="form-field">
+                <label for="message">How can I help you?</label>
+                <textarea name="message" id="message" required></textarea>
+              </div>
+              <div class="form-field">
+                <button type="submit" class="btn btn-cta">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+          
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <!-- Update href and src attributes -->
+          <nav>
+            <ol class="footer-links">
+              <li class="footer-link">
+                <a title="Linkedin" href="https://www.linkedin.com/in/samuel-aellig-8158972b4/" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/linkedin.svg"
+                    alt="Linkedin"
+                /></a>
+              </li>
+              <li class="footer-link">
+                <a title="Twitter" href="https://twitter.com/samuelaellig" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/twitter.svg"
+                    alt="Twitter"
+                /></a>
+              </li>
+            </ol>
+          </nav>
+          <p class="footer-text">
+            &copy; <span>2024</span> - <a href="https://saellig.dev">Samuel Aellig.</a>
+          </p>
+          <label class="theme-switch" for="theme-switch">
+            <span>Dark Theme</span>
+            <input type="checkbox" id="theme-switch" role="switch"/>
+          </label>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
