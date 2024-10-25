@@ -117,7 +117,7 @@ nav {
     font-size: 18px;
 }
 
-.nav-links ul li::after {
+.nav-links ul li a::after {
     content: '';
     width: 0%;
     height: 2px;
@@ -127,7 +127,7 @@ nav {
     transition: 0.5s;
 }
 
-.nav-links ul li:hover::after {
+.nav-links ul li a:hover::after {
     width: 100%;
     transition: 0.5s;
 }
@@ -199,7 +199,13 @@ nav #menu-open, #menu-close {
     .nav-links ul li a {
         color: white;
         text-decoration: none;
-        font-size: 13px;
+        font-weight: 300;
+        font-size: 18px;
+    }
+
+    .nav-links ul li a:hover::after {
+        width: 17.5%;
+        transition: 0.5s;
     }
 
     .hire-btn {
