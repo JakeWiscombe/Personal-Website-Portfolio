@@ -724,6 +724,7 @@ section.about-me {
 
 .section-col.bottom {
     animation: fade-bottom 2.5s;
+    margin: 0 50px;
 }
 
 @keyframes fade-left {
