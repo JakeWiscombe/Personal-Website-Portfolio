@@ -2,8 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jake Wiscombe | Student Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <meta property="og:site_name" content="Jake Wiscombe: Student Portfolio">
+    <meta name="author" content="Jake Wiscombe">
+    <meta name="keywords" content="jakewiscombe, website, development, tutorial, html, css, js,">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Jake Wiscombe: Student Portfolio">
+    <meta property="twitter:title" content="Jake Wiscombe: Student Portfolio">
+    <meta property="og:description" content="lorem ipsum text here because idk what to put">
+    <meta property="og:url" content="https://jakewiscombe.com/">
+    <meta property="og:image" content="https://media.discordapp.net/attachments/1156689775680561306/1172971479223259318/Discord_Logo.png?ex=66085ed1&amp;is=65f5e9d1&amp;hm=9d5b486250ba0dfb282952d503f3f287830d8b12795e1c9f6f2593e38f9cbeec&amp;=&amp;format=webp&amp;qualitylossless">
+    <meta property="twitter:image" content="https://media.discordapp.net/attachments/1156689775680561306/1172971479223259318/Discord_Logo.png?ex=66085ed1&amp;is=65f5e9d1&amp;hm=9d5b486250ba0dfb282952d503f3f287830d8b12795e1c9f6f2593e38f9cbeec&amp;=&amp;format=webp&amp;quality=lossless">
+    <meta property="twitter:card" content="summary">
+    <meta name="theme-color" content="#5ce1e6">
 
     <!---------- Goole Font Import (Kanit) ---------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,58 +24,355 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!---------- Font Awesome Icons Import ---------->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+          integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!---------- Remix Icons Import ---------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" integrity="sha512-HXXR0l2yMwHDrDyxJbrMD9eLvPe3z3qL3PPeozNTsiHJEENxx8DH2CxmV05iwG0dwoz5n4gQZQyYLUNt1Wdgfg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!---------- Linking External CSS ---------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles.css">
 
     <!---------- Linking External JS ---------->
     <link rel="script" href="script.js">
 
     <!---------- Website Title & Icon ---------->
-    <title>Jake Wiscombe | Student Portfolio</title>
-    <link rel="shortcut icon" type="image/x-icon" href="assets/wave.jpeg">
+    <title>Jake Wiscombe</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/tab-icon.png">
 </head>
 
 <body>
     <section class="header">
         <nav>
-            <a href="index.html" class="header-logo">Jake Wiscombe</a>
+            <a href="home.html" class="header-logo">Jake Wiscombe</a>
             <div class="nav-links" id="navLinks">
-                <i class="fa-solid fa-xmark" id="menu-close" onclick="hideMenu()"></i>
+                <i class="ri-close-line" id="menu-close" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href="index.html" class="active">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="portfolio.html">PORTFOLIO</a></li>
-                    <li><a href="services.html">SERVICES</a></li>
-                    <li><a href="resume.html">RESUME</a></li>
-                    <li><a href="contact.php">CONTACT</a></li>
-                    <button class="hire-btn">HIRE ME</button>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.php">Contact</a></li>
                 </ul>
             </div>
-            <i class="fa-solid fa-bars" id="menu-open" onclick="showMenu()"></i>
+            <i class="ri-menu-line" id="menu-open" onclick="showMenu()"></i>
         </nav>
     </section>
 
     <div class="banner-content">
         <div class="text-box">
-            <h1>Coming <span>Soon!</span></h1>
-            <p>Apologies. This part of my website is still under development! When I have finished building it, I will make sure to upload it as quickly as possible.</p>
+            <h1 class="animated animated-text">
+                <span class="mr-2">Hello! I'm Jake Wiscombe! <br> a </span>
+                <div class="animated-info">
+                    <span class="animated-item">Website Developer</span>
+                    <span class="animated-item">Video Editor</span>
+                    <span class="animated-item">Graphic Designer</span>
+                </div>
+            </h1>
+            <p>Welcome to Jake Wiscombe's portfolio. This is where I showcase how my creativity ignites, my web design captivates and how my branding mesmerizes.</p>
 
             <div class="media-icons">
-                <a href="https://www.facebook.com/DJFozzyDiscos" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://www.facebook.com/DJFozzyDiscos" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.facebook.com/DJFozzyDiscos" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                <a href="https://www.facebook.com/DJFozzyDiscos" target="_blank"><i class="fa-brands fa-discord"></i></a>
-                <a href="https://www.facebook.com/DJFozzyDiscos" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://instagram.com/djfozzydiscos?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://m.me/DJFozzyDiscos/" target="_blank"><i class="fab fa-facebook-messenger"></i></a>
+                <a href="https://github.com/Jake-Wiscombe" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.youtube.com/@jakewiscombe" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://discord.gg/w8939TJ7zk" target="_blank"><i class="fa-brands fa-discord"></i></a>
             </div>
         </div>
     </div>
-    
-    <script src="script.js">s</script>
+
+
+
+    <section class="trusted">
+        <div class="section-container">
+            <h1 class="section-title">Trusted by</h1>
+            <div class="logos">
+                <div class="logo-group">
+                    <img loading="lazy" src="assets/trusted-by/logoipsum-289.svg" alt="Logoipsum" class="logo hide to-top" />
+                    <img loading="lazy" src="assets/trusted-by/jvbnails.png" alt="Logo" class="logo" />
+                    <img loading="lazy" src="assets/trusted-by/logoipsum-311.svg" alt="Logoipsum" class="logo hide to-bottom" />
+                </div>
+
+                <div class="logo-group">
+                    <img loading="lazy" src="assets/trusted-by/logoipsum-325.svg" alt="Logoipsum" class="logo hide to-top" />
+                    <img loading="lazy" src="assets/trusted-by/jxmodifications.png" alt="Logoipsum" class="logo" />
+                    <img loading="lazy" src="assets/trusted-by/logoipsum-331.svg" alt="Logoipsum" class="logo hide to-bottom" />
+                </div>
+
+                <div class="logo-group">
+                    <img loading="lazy" src="assets/trusted-by/logoipsum-332.svg" alt="Logoipsum" class="logo hide to-top" />
+                    <img loading="lazy" src="assets/trusted-by/policinglondon.png" alt="Logoipsum" class="logo" />
+                    <img loading="lazy" src="assets/trusted-by/logoipsum-258.svg" alt="Logoipsum" class="logo hide to-bottom" />
+                </div>
+
+                <div class="logo-group">
+                    <img loading="lazy" src="assets/trusted-by/logoipsum-259.svg" alt="Logoipsum" class="logo hide to-top" />
+                    <img loading="lazy" src="assets/trusted-by/hazelburyrpc.png" alt="Logoipsum" class="logo" />
+                    <img loading="lazy" src="assets/trusted-by/logoipsum-262.svg" alt="Logoipsum" class="logo hide to-bottom" />
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="project-showcase">
+        <div class="section-container">
+            <h1 class="section-title">Recent Work</h1>
+            <div class="section-row">
+                <div class="swiper projects">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="assets/projects/jxmodifications.png" alt="" class="thumbnail">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="information">
+                                <h1 class="project-title">JX Modifications</h1>
+                                <p class="project-description">A new and upcoming modding community, ready to provide our customers with high quality products. JX Modifications is the ultimate destination for all roleplayers and developers, offering a wide range of products to help you get your FiveM community up and running in no time. CHANGE THE LANGUAGES INTO TAGS WITH COOL THINGS.</p>
+                                <div class="tags">
+                                    <div class="tag">
+                                        <img class="languages" src="assets/languages/html.png">
+                                    </div>
+                                </div>
+                                <h3 class="subtitle">Languages used:</h3>   
+                                <ul class="languages">
+                                    <li class="languages">HTML</li>
+                                    <li class="languages">CSS</li>
+                                    <li class="languages">JavaScript</li>
+                                </ul>
+                                <a href="https://jvbnails.co.uk" target="_blank" class="link">Explore this project</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <div class="section-container">
+            <h1 class="section-title">Recent Work</h1>
+            <div class="section-row">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="assets/projects/jxmodifications.png" alt="" class="thumbnail">
+                            <div class="information">
+                                <h1 class="project-title">JX Modifications</h1>
+                                <p class="project-description">JX Modifications is the ultimate destination for all roleplayers and developers, offering a wide range of products to help you get your FiveM community up and running in no time!</p>
+                                <a href="https://www.jxmodifications.co.uk" target="_blank" class="link">Explore this project</a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="assets/projects/policinglondon.png" alt="" class="thumbnail">
+                            <div class="information">
+                                <h1 class="project-title">Policing London</h1>
+                                <p class="project-description">Policing London is a well-known FiveM Server based off the Metropolitan Police & support services! With a server popularity of 3000+ members, what more could you ask for?</p>
+                                <a href="https://policinglondon.jakewiscombe.com" target="_blank" class="link">Explore this project</a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="assets/projects/jvbnails.png" alt="" class="thumbnail">
+                            <div class="information">
+                                <h1 class="project-title">JVB Nails</h1>
+                                <p class="project-description">Need a new set of stylish nails, look no further! JVB Nails have got you fully covered with a wide range of high quality, authentic nail sets. Purchase today!</p>
+                                <a href="https://jvbnails.co.uk" target="_blank" class="link">Explore this project</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <a href="projects.html" class="main-button">Explore Projects <i class="fa-solid fa-angle-right" id="caret"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="section-container">
+            <h1 class="section-title">Testimonials</h1>
+            <div class="section-row">
+                <ol class="testimonials">
+                    <li class="testimonial">
+                        <blockquote class="testimonial-text">
+                            I am really glad I chose to work with Jake on the project of my business website. He has been professional and courteous the entire time, he took time to understand what I wanted whilst also suggesting ways to make the website present better.
+                            Jake also took time and made sure all the little things were taken care of too! I highly recommend putting your trust into him for your websites/projects - he truly is a credit to the website development industry.
+                        </blockquote>
+                        <figure class="testimonial-author">
+                            <img src="assets/testimonials/jvbnails.png" alt="Carl Eley" loading="lazy" />
+                            <figcaption>
+                                <h3 class="testimonial-author-name">Jade Bilsland</h3>
+                                <p class="testimonial-author-job">Founder of JVB Nails</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="testimonial">
+                        <blockquote class="testimonial-text">
+                            I'm really happy with the service Jake has provided for my business. He's been constantly in touch, keeping me and my team up to date with what's happening with the development of the website and throughout the whole process, even when the website was complete, was still
+                            pushing updates and keeping us informed. He's remained professional throughout the entire process, which made the experience working with Jake even better. The website that Jake created was top notch! Everything that we asked for, Jake made it happen. With his expertise, this
+                            made the whole development of the website easy and didn't take long to complete at all. Overall, I would recommend Jake to anyone who is looking for someone to build a website.
+                        </blockquote>
+                        <figure class="testimonial-author">
+                            <img src="assets/testimonials/policinglondon.png" alt="Carl Eley" loading="lazy" />
+                            <figcaption>
+                                <h3 class="testimonial-author-name">Olly21 & Liam Colson</h3>
+                                <p class="testimonial-author-job">Owners of Policing London</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="testimonial">
+                        <blockquote class="testimonial-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </blockquote>
+                        <figure class="testimonial-author">
+                            <img src="assets/trusted-by/logoipsum-311.svg" alt="Carl Eley" loading="lazy" />
+                            <figcaption>
+                                <h3 class="testimonial-author-name">Example Owner</h3>
+                                <p class="testimonial-author-job">Example Community</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="testimonial">
+                        <blockquote class="testimonial-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </blockquote>
+                        <figure class="testimonial-author">
+                            <img src="assets/trusted-by/logoipsum-311.svg" alt="Carl Eley" loading="lazy" />
+                            <figcaption>
+                                <h3 class="testimonial-author-name">Example Owner</h3>
+                                <p class="testimonial-author-job">Example Community</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="testimonial">
+                        <blockquote class="testimonial-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </blockquote>
+                        <figure class="testimonial-author">
+                            <img src="assets/trusted-by/logoipsum-311.svg" alt="Carl Eley" loading="lazy" />
+                            <figcaption>
+                                <h3 class="testimonial-author-name">Example Owner</h3>
+                                <p class="testimonial-author-job">Example Community</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="testimonial">
+                        <blockquote class="testimonial-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </blockquote>
+                        <figure class="testimonial-author">
+                            <img src="assets/trusted-by/logoipsum-311.svg" alt="Carl Eley" loading="lazy" />
+                            <figcaption>
+                                <h3 class="testimonial-author-name">Example Owner</h3>
+                                <p class="testimonial-author-job">Example Community</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="section-container">
+            <div class="section-row">
+
+                <div class="section-col top">
+                    <section class="stats">
+                        <div class="counter-container">
+                            <i class="ri-bar-chart-fill"></i>
+                            <div class="counter" data-target="286633"></div>
+                            <span>Total Collective Views</span>
+                        </div>
+
+                        <div class="counter-container">
+                            <i class="fab fa-youtube fa-3x"></i>
+                            <div class="counter" data-target="2004"></div>
+                            <span>Total Youtube Subscribers</span>
+                        </div>
+
+                        <div class="counter-container">
+                            <i class="ri-hourglass-2-fill"></i>
+                            <div class="counter" data-target="5127"></div>
+                            <span>Hours Developing</span>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="section-col bottom">
+            <h4 class="footer-title">Jake Wiscombe</h4>
+            <p>I'm a young student, currently studying for their A-Levels, who has a growing passion for web design and development. Hoping to fulfill a career in web development in the near future.</p>
+
+            <div class="icons">
+                <a href="https://github.com/Jake-Wiscombe" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.youtube.com/@jakewiscombe" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://discord.gg/w8939TJ7zk" target="_blank"><i class="fa-brands fa-discord"></i></a>
+            </div>
+
+            <p>Copyright © 2024 Jake Wiscombe - All rights reserved.</p>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 50,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                750: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 50,
+                },
+            },
+        });
+
+        var swiper = new Swiper(".projects", {
+            slidesPerView: 2,
+            spaceBetween: 50,
+        });
+    </script>
+
 </body>
 </html>

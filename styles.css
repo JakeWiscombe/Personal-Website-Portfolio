@@ -1242,3 +1242,79 @@ section.about-me {
     border-radius: 50%;
     background-color: grey;
 }
+
+
+
+
+
+
+/* --------------------------------- */
+/* ----- Projects Page -----*/
+/* --------------------------------- */
+
+.project-showcase {
+    display: flex;
+    background-color: var(--primary-bg);
+    padding-top: 100px;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+
+.project-showcase .swiper {
+    width: 100%;
+    height: min-content;
+    padding-bottom: 50px;
+}
+
+.project-showcase .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 18px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.project-showcase .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.project-showcase .swiper-slide .information {
+    width: fit-content;
+    padding: 25px 10px 25px 10px;
+}
+
+.project-showcase .swiper-slide .information .project-title {
+    color: white;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+    .project-showcase .swiper-slide .information .subtitle {
+        color: white;
+        font-weight: 500;
+        padding-bottom: 15px;
+    }
+
+.project-showcase .swiper-slide .information .project-description {
+    color: var(--secondary-text-col);
+    font-weight: 300;
+    padding-bottom: 15px;
+}
+
+
+.swiper-pagination-bullet {
+    width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 8px));
+    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
+    display: inline-block;
+    border-radius: var(--swiper-pagination-bullet-border-radius, 75%);
+    background: var(--swiper-pagination-bullet-inactive-color, #ffffff);
+    opacity: var(--swiper-pagination-bullet-inactive-opacity, 1);
+}
