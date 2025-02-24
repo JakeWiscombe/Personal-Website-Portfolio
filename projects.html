@@ -18,7 +18,7 @@
     <meta property="twitter:card" content="summary">
     <meta name="theme-color" content="#5ce1e6">
 
-    <!---------- Goole Font Import (Kanit) ---------->
+    <!---------- Google Font Import (Kanit) ---------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -36,7 +36,8 @@
 
     <!---------- Linking External CSS ---------->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="base-styles.css">
+    <link rel="stylesheet" href="project-styles.css">
 
     <!---------- Linking External JS ---------->
     <link rel="script" href="script.js">
@@ -122,164 +123,48 @@
         <div class="section-container">
             <h1 class="section-title">Recent Work</h1>
             <div class="section-row">
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
                 <div class="swiper projects">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <img src="assets/projects/jxmodifications.png" alt="" class="thumbnail">
+                            <div class="information">
+                                <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, assumenda labore mollitia eaque cum, voluptatum facere ab, excepturi beatae iste asperiores doloremque dicta quo obcaecati nisi. Dolorem facere impedit recusandae nam sint excepturi distinctio. Magni voluptatem provident, suscipit doloribus necessitatibus quos porro blanditiis modi excepturi tempore adipisci eligendi incidunt ad? Provident laboriosam dolorem ipsa totam, beatae sit obcaecati nulla, sequi laudantium consequuntur, dolores voluptates incidunt itaque. Ad quos doloribus veniam officia laudantium cum fugit ipsa a ab ea eius, atque quasi consequatur beatae dolorem sunt numquam alias voluptates earum quidem.</p>
+                                <a href="https://jxmodifications.co.uk" target="_blank" class="link">Explore this project</a>
+                            </div>
                         </div>
 
                         <div class="swiper-slide">
                             <div class="information">
                                 <h1 class="project-title">JX Modifications</h1>
                                 <p class="project-description">A new and upcoming modding community, ready to provide our customers with high quality products. JX Modifications is the ultimate destination for all roleplayers and developers, offering a wide range of products to help you get your FiveM community up and running in no time.</p>
-                                <div class="tags">
+                                <article class="pictures">
+                                    <img src="assets/projects/jxmodifications/1.png" alt="" id="picture">
+                                    <img src="assets/projects/jxmodifications/2.png" alt="" id="picture">
+                                    <img src="assets/projects/jxmodifications/3.png" alt="" id="picture">
+                                    <img src="assets/projects/jxmodifications/4.png" alt="" id="picture">
+                                    <img src="assets/projects/jxmodifications/5.png" alt="" id="picture">
+                                    <img src="assets/projects/jxmodifications/6.png" alt="" id="picture">
+                                </article>
+
+                                <!-- <div class="tags">
                                     <ul>
                                         <li class="languages"><img src="assets/languages/html.png" alt=""></li>
                                         <li class="languages"><img src="assets/languages/css.png" alt=""></li>
                                         <li class="languages"><img src="assets/languages/js.webp" alt=""></li>
                                     </ul> 
-                                </div>
-                                <a href="https://jxmodifications.co.uk" target="_blank" class="link">Explore this project</a>
+                                </div> -->
                             </div>
                         </div>
 
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="projects">
-        <div class="section-container">
-            <h1 class="section-title">Recent Work</h1>
-            <div class="section-row">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="assets/projects/jxmodifications.png" alt="" class="thumbnail">
-                            <div class="information">
-                                <h1 class="project-title">JX Modifications</h1>
-                                <p class="project-description">JX Modifications is the ultimate destination for all roleplayers and developers, offering a wide range of products to help you get your FiveM community up and running in no time!</p>
-                                <a href="https://www.jxmodifications.co.uk" target="_blank" class="link">Explore this project</a>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <img src="assets/projects/policing-london.png" alt="" class="thumbnail">
-                            <div class="information">
-                                <h1 class="project-title">Policing London</h1>
-                                <p class="project-description">Policing London is a well-known FiveM Server based off the Metropolitan Police & support services! With a server popularity of 3000+ members, what more could you ask for?</p>
-                                <a href="https://policinglondon.jakewiscombe.com" target="_blank" class="link">Explore this project</a>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <img src="assets/projects/jvbnails.png" alt="" class="thumbnail">
-                            <div class="information">
-                                <h1 class="project-title">JVB Nails</h1>
-                                <p class="project-description">Need a new set of stylish nails, look no further! JVB Nails have got you fully covered with a wide range of high quality, authentic nail sets. Purchase today!</p>
-                                <a href="https://jvbnails.co.uk" target="_blank" class="link">Explore this project</a>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-                <a href="projects.html" class="main-button">Explore Projects <i class="fa-solid fa-angle-right" id="caret"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <section class="testimonials-section">
-        <div class="section-container">
-            <h1 class="section-title">Testimonials</h1>
-            <div class="section-row">
-                <ol class="testimonials">
-                    <li class="testimonial">
-                        <blockquote class="testimonial-text">
-                            I am really glad I chose to work with Jake on the project of my business website. He has been professional and courteous the entire time, he took time to understand what I wanted whilst also suggesting ways to make the website present better.
-                            Jake also took time and made sure all the little things were taken care of too! I highly recommend putting your trust into him for your websites/projects - he truly is a credit to the website development industry.
-                        </blockquote>
-                        <figure class="testimonial-author">
-                            <img src="assets/testimonials/jvbnails.png" alt="Carl Eley" loading="lazy" />
-                            <figcaption>
-                                <h3 class="testimonial-author-name">Jade Bilsland</h3>
-                                <p class="testimonial-author-job">Founder of JVB Nails</p>
-                            </figcaption>
-                        </figure>
-                    </li>
-
-                    <li class="testimonial">
-                        <blockquote class="testimonial-text">
-                            I'm really happy with the service Jake has provided for my business. He's been constantly in touch, keeping me and my team up to date with what's happening with the development of the website and throughout the whole process, even when the website was complete, was still
-                            pushing updates and keeping us informed. He's remained professional throughout the entire process, which made the experience working with Jake even better. The website that Jake created was top notch! Everything that we asked for, Jake made it happen. With his expertise, this
-                            made the whole development of the website easy and didn't take long to complete at all. Overall, I would recommend Jake to anyone who is looking for someone to build a website.
-                        </blockquote>
-                        <figure class="testimonial-author">
-                            <img src="assets/testimonials/policinglondon.png" alt="Carl Eley" loading="lazy" />
-                            <figcaption>
-                                <h3 class="testimonial-author-name">Olly21 & Liam Colson</h3>
-                                <p class="testimonial-author-job">Owners of Policing London</p>
-                            </figcaption>
-                        </figure>
-                    </li>
-
-                    <li class="testimonial">
-                        <blockquote class="testimonial-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </blockquote>
-                        <figure class="testimonial-author">
-                            <img src="assets/trusted-by/logoipsum-311.svg" alt="Carl Eley" loading="lazy" />
-                            <figcaption>
-                                <h3 class="testimonial-author-name">Example Owner</h3>
-                                <p class="testimonial-author-job">Example Community</p>
-                            </figcaption>
-                        </figure>
-                    </li>
-
-                    <li class="testimonial">
-                        <blockquote class="testimonial-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </blockquote>
-                        <figure class="testimonial-author">
-                            <img src="assets/trusted-by/logoipsum-311.svg" alt="Carl Eley" loading="lazy" />
-                            <figcaption>
-                                <h3 class="testimonial-author-name">Example Owner</h3>
-                                <p class="testimonial-author-job">Example Community</p>
-                            </figcaption>
-                        </figure>
-                    </li>
-
-                    <li class="testimonial">
-                        <blockquote class="testimonial-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </blockquote>
-                        <figure class="testimonial-author">
-                            <img src="assets/trusted-by/logoipsum-311.svg" alt="Carl Eley" loading="lazy" />
-                            <figcaption>
-                                <h3 class="testimonial-author-name">Example Owner</h3>
-                                <p class="testimonial-author-job">Example Community</p>
-                            </figcaption>
-                        </figure>
-                    </li>
-
-                    <li class="testimonial">
-                        <blockquote class="testimonial-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </blockquote>
-                        <figure class="testimonial-author">
-                            <img src="assets/trusted-by/logoipsum-311.svg" alt="Carl Eley" loading="lazy" />
-                            <figcaption>
-                                <h3 class="testimonial-author-name">Example Owner</h3>
-                                <p class="testimonial-author-job">Example Community</p>
-                            </figcaption>
-                        </figure>
-                    </li>
-                </ol>
             </div>
         </div>
     </section>
@@ -330,6 +215,7 @@
     </section>
 
     <script src="script.js"></script>
+    <script src="imageclick.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
