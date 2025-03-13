@@ -1,0 +1,81 @@
+/* Quick Booking Section */
+
+section.quick-booking {
+    background-color: var(--brand-col);
+    position: relative;
+    width: 80%;
+    left: 10%;
+    padding: 25px;
+    margin-bottom: 50px;
+    display: flex;
+    border-radius: 0 0 10px 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  @media (max-width: 1500px) {
+    section.quick-booking {
+      width: 100%;
+      left: 0%;
+      flex-direction: column;
+    }
+  
+    .booking-selections {
+      flex-wrap: wrap;
+    }
+  }
+  
+  .create-booking {
+    padding: 8.5px 15px;
+    font-weight: 500;
+    border: rgb(0, 0, 0) solid 2.5px;
+    border-radius: 10px; 
+  }
+  
+  .create-booking:hover {
+    background-color: var(--brand-col);
+    color: white;
+    border: rgb(255, 255, 255) solid 2.5px;
+  }
+  
+  .booking-option {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 0 5px;
+    overflow: visible;
+  }
+  
+  .booking-selections {
+    display: flex;
+  }
+  
+  select, #totalPrice {
+    height: 41px;
+    width: 100px;
+    padding: 10px 15px;
+    border: rgb(0, 0, 0) solid 2.5px;
+    border-radius: 10px;  
+  }
+  
+  label {
+    color: white;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    padding: 7.5px 15px;
+    border: rgb(0, 0, 0) solid 2.5px;
+    border-radius: 10px;
+  }
+
+  textarea {
+    border: rgb(0, 0, 0) solid 2.5px;
+    border-radius: 10px; 
+  }

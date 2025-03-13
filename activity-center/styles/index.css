@@ -1,0 +1,23 @@
+.swiper-slide.cinema {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/cinema-watching.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+    
+.swiper-slide.bowling {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/bowling-group.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+    
+.swiper-slide.indoor-skatepark {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/indoor-skatepark.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/christmas.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
