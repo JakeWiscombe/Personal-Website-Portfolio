@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: white;
+    --secondary-text-col: #989898;
+    --gutter-x-large: 4rem;
+    --black: #1a1a1a;
+    --link-spacing: 40px;
+}
+
+body {
+    background-color: #989898;
+}
+
+.padding-one {
+    margin: 0 100px;
+}
+
+.saletag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background-color: var(--black);
+    color: white;
+    font-size: 18px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 15px 0;
+    overflow: hidden;
+}
+
+.navigation img.logo {
+    width: 50px;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: var(--link-spacing);
+}
+
+.nav-link {
+    color: var(--black);
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+.dropdown-button #icon {
+    padding-left: 10px;
+}
+
+
+
+
+
+.nav-dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.nav-dropdown .dropdown-button {
+    display: block;
+    cursor: pointer;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: inherit;
+  }
+  
+.navigation a:hover, .navigation .nav-link.active, .nav-dropdown:hover .dropdown-button, .dropdown-button:focus {
+    border-bottom: 1px solid var(--black);
+}
+
+.navigation .dropdown-button:focus #icon {
+    rotate: 180deg;
+    transform-origin: 75% 50%;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content .nav-link {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content .nav-link:hover {
+    background-color: #ddd;
+}
+  
+.show {
+    display: block;
+}
