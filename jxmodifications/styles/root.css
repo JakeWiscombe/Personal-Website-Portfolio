@@ -17,7 +17,7 @@
 }
 
 body {
-    background-color: #989898;
+    background-color: #ffffff;
 }
 
 
@@ -29,8 +29,8 @@ h1 {
 }
 
 h2 {
-    color: white;
-    font-size: 64px;
+    color: var(--black);
+    font-size: 42px;
     padding-bottom: 15px;
 }
 
@@ -44,6 +44,13 @@ p {
 
 .padding-one {
     padding: 50px 10%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .saletag {
@@ -147,14 +154,6 @@ p {
     height: 500px;
 }
 
-.content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
-
 .header p {
     text-align: center;
     width: 75%;
@@ -163,6 +162,7 @@ p {
 .button-group {
     display: flex;
     padding: 15px;
+    gap: 15px;
 }
 
 .button-one {
@@ -172,4 +172,42 @@ p {
     font-weight: 500;
     padding: 15px 35px;
     border: none;
+    border-radius: 25px;
+}
+
+.featured-products {
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    height: 450px;
+    font-size: 18px;
+    background: #665454;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-wrapper {
+    margin-bottom: 15px;
 }
