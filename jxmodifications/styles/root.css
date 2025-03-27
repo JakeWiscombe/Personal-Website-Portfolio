@@ -9,6 +9,7 @@
 
 :root {
     --main-color: white;
+    --brand-color: #166BE0;
     --secondary-text-col: #989898;
     --gutter-x-large: 4rem;
     --black: #1a1a1a;
@@ -19,8 +20,30 @@ body {
     background-color: #989898;
 }
 
+
+h1 {
+    color: white;
+    font-size: 72px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+h2 {
+    color: white;
+    font-size: 64px;
+    padding-bottom: 15px;
+}
+
+p {
+    color: white;
+    font-size: 16px;
+    font-weight: 350;
+    padding-bottom: 15px;
+}
+
+
 .padding-one {
-    margin: 0 100px;
+    padding: 50px 10%;
 }
 
 .saletag {
@@ -37,7 +60,8 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: white;
-    padding: 15px 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
     overflow: hidden;
 }
 
@@ -45,7 +69,7 @@ body {
     width: 50px;
 }
 
-.nav-items {
+.nav-items, .branding {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -115,4 +139,37 @@ body {
   
 .show {
     display: block;
+}
+
+.header {
+    display: flex;
+    background: rgb(170, 177, 189);
+    height: 500px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.header p {
+    text-align: center;
+    width: 75%;
+}
+
+.button-group {
+    display: flex;
+    padding: 15px;
+}
+
+.button-one {
+    background-color: var(--brand-color);
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 15px 35px;
+    border: none;
 }
