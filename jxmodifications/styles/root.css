@@ -10,6 +10,7 @@
 :root {
     --main-color: white;
     --brand-color: #166BE0;
+    --brand-hover: #135bc0;
     --secondary-text-col: #989898;
     --gutter-x-large: 4rem;
     --black: #1a1a1a;
@@ -17,7 +18,11 @@
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #f8faff;
+}
+
+.section-title {
+    margin-bottom: 25px;
 }
 
 
@@ -35,10 +40,8 @@ h2 {
 }
 
 p {
-    color: white;
     font-size: 16px;
     font-weight: 350;
-    padding-bottom: 15px;
 }
 
 
@@ -51,6 +54,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .saletag {
@@ -151,12 +155,14 @@ p {
 .header {
     display: flex;
     background: rgb(170, 177, 189);
+    color: white;
     height: 500px;
 }
 
 .header p {
     text-align: center;
     width: 75%;
+    padding-bottom: 15px;
 }
 
 .button-group {
@@ -166,6 +172,7 @@ p {
 }
 
 .button-one {
+    cursor: pointer;
     background-color: var(--brand-color);
     color: white;
     font-size: 16px;
@@ -173,6 +180,12 @@ p {
     padding: 15px 35px;
     border: none;
     border-radius: 25px;
+    transition: ease-in-out 0.2s;
+}
+
+.button-one:hover {
+    background-color: var(--brand-hover);
+    transition: ease-in-out 0.2s;
 }
 
 .featured-products {
@@ -192,13 +205,14 @@ p {
 }
 
 .swiper-slide {
-    text-align: center;
+    cursor: pointer;
+    text-align: left;
     height: 450px;
     font-size: 18px;
-    background: #665454;
+    background: #ffffff;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .swiper-slide img {
@@ -210,4 +224,29 @@ p {
 
 .swiper-wrapper {
     margin-bottom: 15px;
+}
+
+.thumbnail {
+    width: fit-content;
+}
+
+.swiper-slide .product-content {
+    color: var(--black);
+    padding: 25px 25px 0 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-name, .product-price {
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+
+.product-price {
+    margin-left: 25px;
+}
+
+.swiper-slide .button-one {
+    width: 100%;
 }

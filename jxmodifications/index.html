@@ -55,15 +55,39 @@
 
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">Slide 1</div>
-              <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 3</div>
-              <div class="swiper-slide">Slide 4</div>
-              <div class="swiper-slide">Slide 5</div>
-              <div class="swiper-slide">Slide 6</div>
-              <div class="swiper-slide">Slide 7</div>
-              <div class="swiper-slide">Slide 8</div>
-              <div class="swiper-slide">Slide 9</div>
+                <div class="swiper-slide">
+                    <img src="assets/images/products/Surrey & Sussex Police - Audi A4/7.webp" alt="" class="thumbnail">
+                    <div class="product-content">
+                        <p class="product-name">Surrey & Sussex Police - Audi A4</p>
+                        <p class="product-price">£10.00</p>
+                    </div>
+                    <div class="button-group">
+                        <button class="button-one">View Product</button>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="assets/images/products/Generic Police - Unmarked BMW 530D/7.webp" alt="" class="thumbnail">
+                    <div class="product-content">
+                        <p class="product-name">Generic Police - BMW 530D</p>
+                        <p class="product-price">£10.00</p>
+                    </div>
+                    <div class="button-group">
+                        <button class="button-one">View Product</button>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="assets/images/products/British Transport Police - Peugeot 308 SW/9.webp" alt="" class="thumbnail">
+                    <div class="product-content">
+                        <p class="product-name">British Transport Police - Peugeot 308 SW</p>
+                        <p class="product-price">£10.00</p>
+                    </div>
+                    <div class="button-group">
+                        <button class="button-one">View Product</button>
+                    </div>
+                </div>
+              
             </div>
             <div class="swiper-scrollbar"></div>
           </div>
@@ -80,7 +104,24 @@
         scrollbar: {
             el: ".swiper-scrollbar",
             hide: true,
-          },
+        },
+
+        breakpoints: {
+        "0": {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+
+        "650": {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+
+        "1250": {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+    },
         });
       </script>
 </body>
