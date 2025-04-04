@@ -50,6 +50,32 @@
         </div>
     </section>
 
+    <section class="about-us padding-one">
+        <h2 class="section-title">About JX Modifications</h2>
+        <div class="swiper myContent">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <p class="description">JX Modifications first formed through friendship. Since it's creation, it has transformed into something much bigger - a community. Since early October, we have been effortlessly shaping this community into something great. Our goal is to create a large development community to help people get started within their development journey, as well as their own servers.</p>
+                    <div class="button-group">
+                        <button class="button-one">View Product</button>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="gallery">
+                        <img src="assets/images/products/Surrey & Sussex Police - Audi A4/7.webp" alt="" class="thumbnail">
+                        <img src="assets/images/products/Surrey & Sussex Police - Audi A4/7.webp" alt="" class="thumbnail">
+                    </div>
+                    <div class="gallery">
+                        <img src="assets/images/products/Surrey & Sussex Police - Audi A4/7.webp" alt="" class="thumbnail">
+                        <img src="assets/images/products/Surrey & Sussex Police - Audi A4/7.webp" alt="" class="thumbnail">
+                    </div>
+                </div>
+              
+            </div>
+          </div>
+    </section>
+
     <section class="featured-products padding-one">
         <h2 class="section-title">Featured products</h2>
 
@@ -93,6 +119,12 @@
           </div>
     </section>
 
+    <section class="footer padding-one">
+        <div class="content">
+            faf
+        </div>
+    </section>
+
 
     <script src="javascript/navigation.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -100,7 +132,7 @@
     <script>
         var swiper = new Swiper(".mySwiper", {
         slidesPerView: 3,
-        spaceBetween: 30,
+        spaceBetween: 50,
         scrollbar: {
             el: ".swiper-scrollbar",
             hide: true,
@@ -119,6 +151,28 @@
 
         "1250": {
             slidesPerView: 3,
+            spaceBetween: 20,
+        },
+    },
+        });
+
+        var swiper = new Swiper(".myContent", {
+        slidesPerView: 2,
+        spaceBetween: 50,
+
+        breakpoints: {
+        "0": {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+
+        "650": {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+
+        "1250": {
+            slidesPerView: 2,
             spaceBetween: 20,
         },
     },
